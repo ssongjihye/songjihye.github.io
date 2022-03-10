@@ -1,0 +1,398 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<title>JIHYE SONG</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/webfont.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<link rel="stylesheet" href="css/silde-menu.css">
+<style>
+#pfwrap {}
+/* 로고, nav*/
+#header { position:absolute; width:100%; height:70px; z-index:8; }
+#header #ux .logo { position:fixed; left:40px; top:25px; }
+
+/* 상단 */
+#work_overview { position:absolute; width:100%; }
+.work_t1 { margin:80px auto 0; background:url(img/overview_work.png) no-repeat center center;  width:104px; height:28px; }
+.work_t2 { margin:22px auto; color:#a7a7a7; font-size:14px; text-align:center; line-height:19px; }
+
+
+/* 상단 애니메이션_개체 */
+#overview_content { position:absolute; background:url(img/work.png) no-repeat center center; width:1700px; height:280px; left:50%; margin-left:-850px; top:175px;}
+#overview_content div#overview_border { position:relative; border:1px solid #f0f0f0; width:1198px; height:279px; left:50%; margin-left:-599px; }
+#overview_content div#overview_border div#workme { position:absolute; bottom:0; width:200px; height:202px; overflow:hidden; }
+#overview_content div#overview_border div#helicopter { position:absolute; top:0; width:85px; height:77px; overflow:hidden; right:90px;}
+#overview_content div#overview_border div#work_eye { position:absolute; width:315px; height:130px; overflow:hidden; bottom:0; right:321px; }
+#overview_content div#overview_border div#work_book { position:absolute; width:162px; height:86px; overflow:hidden; bottom:19px; left:412px; }
+#overview_content div#overview_border div#work_robot { position:absolute; width:135px; height:150px; overflow:hidden; top:33px; left:375px;}
+#workWrap { position:absolute; width:100%; height:100%; top:456px;}
+
+/* work_menu */
+#workWrap div#menu { width:1090px; height:29px; border-top:1px solid #d9d9d9; margin:30px auto 0;  }
+#workWrap div#menu ul { position:absolute;  padding-top:17px;}
+#workWrap div#menu ul li.menuImg { float:left; text-indent:-9999px; overflow:hidden; background:url(img/menu_typo.png) no-repeat 0 0; height:11px; margin:0 50px; cursor:pointer; display:inline-block; }
+#workWrap div#menu ul li.all { width:27px; background-position:0 0; }
+#workWrap div#menu ul li.editorial { width:70px; background-position:0 -14px; }
+#workWrap div#menu ul li.illust { width:47px; background-position:0 -28px; }
+#workWrap div#menu ul li.poster { width:53px; background-position:0 -42px; }
+#workWrap div#menu ul li.web { width:31px; background-position:0 -56px; }
+#workWrap div#menu ul li.typo { width:93px; background-position:0 -70px; }
+#workWrap div#menu ul li.artwork { width:69px; background-position:0 -84px; }
+
+/* portfolio_workBox */
+.grid{ position:absolute; width:1112px; left:50%; margin-left:-556px; padding-right:17px; margin-top:70px;}
+.grid-item { width:261px; height:341px; margin-left:17px; margin-top:17px; float:left; background:url(img/work_imgbox.png) no-repeat center center; }
+.grid-item-w { width:539px; height:341px; margin-left:17px; margin-top:17px; float:left; background:url(img/work_imgbox_b.png) no-repeat center center; }
+.img-box { margin:2px auto 0; width:255px; height:253px; background-color:#dedede; }
+.img-box-w { margin:2px auto 0; width:533px; height:253px; background-color:#dedede; }
+.text-box { margin:0 auto; width:255px; height:82px; }
+.text-box-w { margin:0 auto; width:533px; height:82px; }
+.text-box ul { width:221px; height:45px; margin:22px 17px 0; color:#6b6b6b; }
+.text-box ul li.work-title { font-weight:bold; font-size:14px; margin-bottom:15px; }
+.text-box ul li.work-type { }
+
+/* portfolio_상세페이 */
+#blackBox_work { position:fixed; width:100%; height:100%; background:black; opacity:0.6; display:none; }
+#viewWork { position:absolute; width:1020px; height:2500px; left:50%; margin-left:-510px; z-index:101; display:none; background-color:#ffffff;}
+
+</style>
+<script src="js/jquery-1.7.2.min.js" /></script>
+<script src="js/silde-menu.js"></script>
+<script src="js/ani-portfolio.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script>
+    $(function(){
+        $('.grid').masonry({
+          // options
+          itemSelector: '.grid-item, .grid-item-w',
+          columnWidth: 1 /*간격 조정*/
+          
+        });
+
+        $("#menu_box li:eq(0)").click(function(){
+            $(".grid-item, .grid-item-w").fadeIn();
+            $(".grid").masonry();                     
+        });
+
+        $("#menu_box li:eq(1)").click(function(){
+            $(".grid-item, .grid-item-w").css({display:"none"});
+            $(".editorial").fadeIn();      
+            $(".grid").masonry();                
+        });
+
+        $("#menu_box li:eq(2)").click(function(){
+            $(".grid-item, .grid-item-w").css({display:"none"});
+            $(".illust").fadeIn();   
+            $(".grid").masonry();                     
+        });  
+
+        $("#menu_box li:eq(3)").click(function(){
+            $(".grid-item, .grid-item-w").css({display:"none"});
+            $(".poster").fadeIn();   
+            $(".grid").masonry();                     
+        }); 
+
+        $("#menu_box li:eq(4)").click(function(){
+            $(".grid-item, .grid-item-w").css({display:"none"});
+            $(".web").fadeIn();   
+            $(".grid").masonry();                     
+        }); 
+
+        $("#menu_box li:eq(5)").click(function(){
+            $(".grid-item, .grid-item-w").css({display:"none"});
+            $(".typo").fadeIn();   
+            $(".grid").masonry();                     
+        });  
+
+        $("#menu_box li:eq(6)").click(function(){
+            $(".grid-item, .grid-item-w").css({display:"none"});
+            $(".artwork").fadeIn();   
+            $(".grid").masonry();                     
+        }); 
+
+        $(".grid-item, .grid-item-w").click(function(){
+            $("#blackBox_work").fadeIn();
+            $("#viewWork").fadeIn();
+        })
+
+        $("#blackBox_work").click(function(){
+            $("#blackBox_work").hide();
+            $("#viewWork").hide();
+        });
+
+    });
+</script>
+</head>
+<body>
+
+
+<div id="pfwrap">
+ <div id="header">
+    <div id="ux">
+        <h1 class="logo"><a href="index.html"><img src="img/logo.png" width="44" height="39" alt="송지혜로고" /></a></h1>
+        <p id="navIcon"><a href="#"></a></p>
+    </div>
+ </div><!--//header-->
+
+<div id="work_overview">
+	<h2 class="work_t1"></h2>
+	<p class="work_t2">Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit, sed do eiusmod</p>
+	<div id="overview_content">
+		<div id="overview_border">
+			<div id="workme">
+			   <img src="img/work_me_ani.png" alt="" />
+			</div>
+			<div id="helicopter">
+			   <img src="img/work_helicopter.png" alt="" />
+			</div>
+			<div id="work_eye">
+			   <img src="img/work_eye.png" alt="" />
+			</div>
+			<div id="work_robot">
+			   <img src="img/work_robot.png" alt="" />
+			</div>
+			<div id="work_book">
+			   <img src="img/work_book.png" alt="" />
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="workWrap">
+	<div id="menu">
+		<ul id="menu_box">
+			<li class="menuImg all">All</li>
+			<li class="menuImg editorial">EDITORIAL</li>
+			<li class="menuImg illust">ILLUST</li>
+			<li class="menuImg poster">POSTER</li>
+			<li class="menuImg web">WEB</li>
+			<li class="menuImg typo">TYPOGRAPHY</li>
+			<li class="menuImg artwork">ARTWORK</li>
+		</ul>
+	</div><!-- menu -->
+
+	<div class="grid">
+    	<div class="grid-item editorial">
+    		<div class="img-box">
+    			<a href=""><img src="" alt=""/></a>
+    		</div>
+    		<div class="text-box">
+    		  <ul>
+    		  	<li class="work-title">Heungkuk Life Insurance</li>
+    		  	<li class="work-type">editorial</li>
+    		  </ul>
+    		</div>
+    	</div><!-- grid-item -->
+        <div class="grid-item typo">
+        	<div class="img-box">
+    			<a href=""><img src="" alt=""/></a>
+    		</div>
+    		<div class="text-box">
+              <ul>
+                <li class="work-title">Heungkuk Life Insurance</li>
+                <li class="work-type">typography</li>
+              </ul>
+    		</div>
+        </div><!-- grid-item -->
+        <div class="grid-item-w artwork">
+            <div class="img-box-w">
+                <a href=""><img src="" alt=""/></a>
+            </div>
+            <div class="text-box-w web">
+              <ul>
+                <li class="work-title">Heungkuk Life Insurance</li>
+                <li class="work-type">artwork</li>
+              </ul>
+            </div>
+        </div><!-- grid-item -->
+        <div class="grid-item editorial">
+            <div class="img-box">
+                <a href=""><img src="" alt=""/></a>
+            </div>
+            <div class="text-box">
+              <ul>
+                <li class="work-title">Heungkuk Life Insurance</li>
+                <li class="work-type">editorial</li>
+              </ul>
+            </div>
+        </div><!-- grid-item -->
+        <div class="grid-item editorial">
+            <div class="img-box">
+                <a href=""><img src="" alt=""/></a>
+            </div>
+            <div class="text-box">
+              <ul>
+                <li class="work-title">Heungkuk Life Insurance</li>
+                <li class="work-type">editorial</li>
+              </ul>
+            </div>
+        </div><!-- grid-item -->
+        <div class="grid-item web">
+            <div class="img-box">
+                <a href=""><img src="" alt=""/></a>
+            </div>
+            <div class="text-box">
+              <ul>
+                <li class="work-title">Heungkuk Life Insurance</li>
+                <li class="work-type">web</li>
+              </ul>
+            </div>
+        </div><!-- grid-item -->
+        <div class="grid-item web">
+            <div class="img-box">
+                <a href=""><img src="" alt=""/></a>
+            </div>
+            <div class="text-box">
+              <ul>
+                <li class="work-title">Heungkuk Life Insurance</li>
+                <li class="work-type">web</li>
+              </ul>
+            </div>
+        </div><!-- grid-item -->
+        <div class="grid-item-w poster">
+            <div class="img-box">
+                <a href=""><img src="" alt=""/></a>
+            </div>
+            <div class="text-box">
+              <ul>
+                <li class="work-title">Heungkuk Life Insurance</li>
+                <li class="work-type">poster</li>
+              </ul>
+            </div>
+        </div><!-- grid-item -->
+        <div class="grid-item illust">
+            <div class="img-box">
+                <a href=""><img src="" alt=""/></a>
+            </div>
+            <div class="text-box">
+              <ul>
+                <li class="work-title">Heungkuk Life Insurance</li>
+                <li class="work-type">illust</li>
+              </ul>
+            </div>
+        </div><!-- grid-item -->
+        <div class="grid-item poster">
+            <div class="img-box">
+                <a href=""><img src="" alt=""/></a>
+            </div>
+            <div class="text-box">
+              <ul>
+                <li class="work-title">Heungkuk Life Insurance</li>
+                <li class="work-type">poster</li>
+              </ul>
+            </div>
+        </div><!-- grid-item -->
+        <div class="grid-item illust">
+            <div class="img-box">
+                <a href=""><img src="" alt=""/></a>
+            </div>
+            <div class="text-box">
+              <ul>
+                <li class="work-title">Heungkuk Life Insurance</li>
+                <li class="work-type">illust</li>
+              </ul>
+            </div>
+        </div><!-- grid-item -->
+        <div class="grid-item artwork">
+            <div class="img-box">
+                <a href=""><img src="" alt=""/></a>
+            </div>
+            <div class="text-box">
+              <ul>
+                <li class="work-title">Heungkuk Life Insurance</li>
+                <li class="work-type">artwork</li>
+              </ul>
+            </div>
+        </div><!-- grid-item -->
+        <div class="grid-item typo">
+            <div class="img-box">
+                <a href=""><img src="" alt=""/></a>
+            </div>
+            <div class="text-box">
+              <ul>
+                <li class="work-title">Heungkuk Life Insurance</li>
+                <li class="work-type">AWARD</li>
+              </ul>
+            </div>
+        </div><!-- grid-item -->
+        <div class="grid-item illust">
+            <div class="img-box">
+                <a href=""><img src="" alt=""/></a>
+            </div>
+            <div class="text-box">
+              <ul>
+                <li class="work-title">Heungkuk Life Insurance</li>
+                <li class="work-type">illust</li>
+              </ul>
+            </div>
+        </div><!-- grid-item -->
+        <div class="grid-item typo">
+            <div class="img-box">
+                <a href=""><img src="" alt=""/></a>
+            </div>
+            <div class="text-box">
+              <ul>
+                <li class="work-title">Heungkuk Life Insurance</li>
+                <li class="work-type">typography</li>
+              </ul>
+            </div>
+        </div><!-- grid-item -->
+        <div class="grid-item illust">
+            <div class="img-box">
+                <a href=""><img src="" alt=""/></a>
+            </div>
+            <div class="text-box">
+              <ul>
+                <li class="work-title">Heungkuk Life Insurance</li>
+                <li class="work-type">illust</li>
+              </ul>
+            </div>
+        </div><!-- grid-item -->
+    </div><!-- grid -->
+
+</div><!-- workWrap -->
+
+<div id="blackBox"></div>
+<div id="blackBox_work"></div>
+<div id="viewWork"></div>
+
+<div id="navBox_sl">
+    <div id="boxAni"></div>
+</div>
+<!--//navBack-->
+
+<div id="navBox">
+	    <ul>
+			<li id="home">
+				<a href="index.html">HOME</a>
+				<img class="menuIcon" src="img/icon1.png" alt="" />
+			</li>
+			<li id="aboutme">
+				<a href="aboutme.html">ABOUT ME</a>
+				<img  class="menuIcon" src="img/icon2.png" alt="" />
+		    </li>
+			<li id="portfolio" class="selected" >
+				<a href="portfolio">PORFOLIO</a>
+				<img  class="menuIcon" src="img/icon3.png" alt="" />
+			</li>
+			<li id="story">
+				<a href="story">WORK STORY</a>
+				<img  class="menuIcon" src="img/icon4.png" alt="" />
+			</li>
+			<li id="contact">
+				<a href="contact">CONTACT</a>
+				<img  class="menuIcon" src="img/icon5.png" alt="" />
+			</li>
+	    </ul>
+</div>
+</div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>송지혜 포트폴리오</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/webfont.css">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script>
+
+	$(function(){
+	  $("#blackBox").css({opacity:0.7});	
+        var sideMenuView = 0;
+		var total = 23;
+		var counter = 0;	
+			
+		$('#header #ux p#navIcon').click(function(){ 
+			
+		   if (sideMenuView === 0 ) {
+   		  	paperOpen();
+			$("#blackBox").stop().fadeIn(1000,function(){
+				$("#navBox ul").stop().fadeIn(100);
+			});	  	 
+   		   } else {
+			 paperClose(); 			 
+			 $("#blackBox").stop().fadeOut();
+			 $("#navBox ul").stop().fadeOut(80);
+   		   }
+		 });
+
+		function paperOpen() {
+		
+			timer = setInterval(function(){
+				 counter++;
+				 if (counter < total) {
+					$("#navBox_sl #boxAni").css({marginLeft:"-=530"});	
+				 } else {
+				 	clearInterval(timer);
+					sideMenuView = 1;
+
+				 }
+			},35); 
+
+			totalBtn = 10;
+			counterBtn = 1;
+			var timerBtn = setInterval(function(){
+				if (counterBtn < totalBtn) {
+					$('#header #ux p#navIcon a').css({backgroundPosition:"-=34px 0"});
+					counterBtn++;					
+				} else {
+					clearInterval(timerBtn);
+				}
+				
+			},40);						
+		}
+
+		function paperClose() {
+
+			timer2 = setInterval(function(){
+				 counter--;
+				 if (counter > 0) {
+					$("#navBox_sl #boxAni").css({marginLeft:"+=530"});	
+				 } else {
+				 	clearInterval(timer2);
+					sideMenuView = 0;
+						
+				 }
+			},30);
+
+
+			var timerBtn = setInterval(function(){
+				if (counterBtn > 1) {
+					$('#header #ux p#navIcon a').css({backgroundPosition:"+=34px 0"});
+					counterBtn--;					
+				} else {
+					clearInterval(timerBtn);
+				}
+				
+			},40);				
+	});
+
+</script>
+
+<style>
+/* 코딩의 초기화 */
+* { margin:0; padding:0;}
+ul li , ol li { list-style:none; }
+a { text-decoration:none; }
+body,html { width:100%; height:100%; }
+img,fieldset { border:none; vertical-align:middle;}
+
+
+#header { position:absolute; width:100%; height:70px; z-index:8; }
+#header #ux { }
+#header #ux .logo { position:fixed; left:40px; top:25px; }
+#header #ux p#navIcon { position:fixed; right:30px; top:25px; }
+#header #ux p#navIcon a { background:url(img/navIcon.png) no-repeat 0 0; width:34px; height:24px; display:block; }
+
+
+
+/* navBox */
+#navBox_sl { position:absolute; width:530px; height:100%; right:0%; overflow:hidden; }
+#boxAni { position:absolute; width:12190px; height:100%; background-image:url("img/navbox_sl_line.png");}
+#blackBox { width:100%; height:100%; position:fixed; background:black; display:none;}
+
+#navBox ul { position:absolute; top:25%; right:0%; width:260px; height:345px; margin:0 30px 0 0; display:none; }
+#navBox ul li {  width:149px; height:29px; margin:0 0 48px 0; }
+#navBox ul li a { display:block; text-indent:-9999px; }
+#navBox ul li img.menuIcon { margin:-30px 0 0 210px; }
+#navBox ul li#home { background:url(img/nav-typo.png) no-repeat left 0; }
+#navBox ul li.selected { background:url(img/nav-typo_h.png) no-repeat left 0 !important;} 
+#navBox ul li#aboutme { background:url(img/nav-typo.png) no-repeat left -32px;}
+#navBox ul li#aboutme span { position:absolute;}
+#navBox ul li#portfolio { background:url(img/nav-typo.png) no-repeat left -62px;}
+#navBox ul li#story { background:url(img/nav-typo.png) no-repeat left -92px;}
+#navBox ul li#contact { background:url(img/nav-typo.png) no-repeat left -122px;}
+
+#navBox ul #home:hover { background:url(img/nav-typo_h.png) no-repeat 0 0;}
+#navBox ul #aboutme:hover { background:url(img/nav-typo_h.png) no-repeat 0 -32px;}
+#navBox ul #portfolio:hover { background:url(img/nav-typo_h.png) no-repeat 0 -62px;}
+#navBox ul #story:hover { background:url(img/nav-typo_h.png) no-repeat 0 -92px;}
+#navBox ul #contact:hover { background:url(img/nav-typo_h.png) no-repeat 0 -122px;}
+#navBox ul #home:active { background:url(img/nav-typo.png) no-repeat -148px 0;}
+#navBox ul #aboutme:active { background:url(img/nav-typo.png) no-repeat -148px -32px;}
+#navBox ul #portfolio:active { background:url(img/nav-typo.png) no-repeat -148px -62px;}
+#navBox ul #story:active { background:url(img/nav-typo.png) no-repeat -148px -92px;}
+#navBox ul #contact:active { background:url(img/nav-typo.png) no-repeat -148px -122px;}
+
+
+/* contents */
+#contents { position:absolute; width:100%; height:100%; }
+#contents #contentsIll { position:absolute; width:556px; height:462px; background:url(img/contact_back.png) no-repeat center center; bottom:0px; left:-80px; overflow:hidden; } 
+#contents #mailbox { position:absolute; right:30px; top:110px; width:674px; height:772px; borer:1px solid #f0f0f0; }
+#contents #mailbox #paper { position:relative; width:755px; height:650px; background:url(img/contact_paper.png) no-repeat center center; right:30px; overflow:hidden; }
+#contents #mailbox #paper .textbox { position:relative; width:560px; height:560px; background-color:#f9f9f9; }
+
+</style> 
+
+</head>
+<body>
+
+ <div id="header">
+ 	<div id="ux">
+ 		<h1 class="logo"><a href="#"><img src="img/logo.png" width="44" height="39" alt="송지혜로고" /></a></h1>
+ 		<p id="navIcon"><a href="#"></a></p>
+ 	</div>
+ </div><!--//header--><!--//header-->
+
+
+ <div id="navBox">
+	    <ul>
+			<li id="home" class="selected">
+				<a href="index.html">HOME</a>
+				<img class="menuIcon" src="img/icon1.png" alt="" />
+			</li>
+			<li id="aboutme">
+				<a href="aboutme.html">ABOUT ME</a>
+				<img  class="menuIcon" src="img/icon2.png" alt="" />
+		    </li>
+			<li id="portfolio">
+				<a href="portfolio">PORFOLIO</a>
+				<img  class="menuIcon" src="img/icon3.png" alt="" />
+			</li>
+			<li id="story">
+				<a href="story">WORK STORY</a>
+				<img  class="menuIcon" src="img/icon4.png" alt="" />
+			</li>
+			<li id="contact">
+				<a href="contact">CONTACT</a>
+				<img  class="menuIcon" src="img/icon5.png" alt="" />
+			</li>
+	    </ul>
+</div>
+
+<div id="contents">
+	<div id="contentsIll">
+
+	</div>
+	<div id="mailbox">
+	   <div id="paper">
+	     <ul class="textbox">
+	     	<li id="name"></li>
+	     	<li id="email"></li>
+	     	<li id="company"></li>
+	     	<li id="detail"></li>
+	     </ul>
+	   </div>
+	</div>
+</div>
+
+</body>
+</html>

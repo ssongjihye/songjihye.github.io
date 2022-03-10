@@ -1,0 +1,24 @@
+/* contents */
+#contents .wrap { position:absolute; width:100%; height:100%; }
+#contents .wrap .contentsIll { position:absolute; width:1000px; height:645px; left:50%; top:50%; margin-left:-580px; margin-top:-300px;
+            background:url(../img/main-illust2.png) no-repeat center bottom; border:1px solid green; }
+#contents .wrap p { position:absolute; right:70px; top:49%; }
+
+
+/* contents-about */
+ul#ab { position:absolute; width:50%; overflow:hidden; left:45px; top:0px; }
+ul#ab li#aboutBg { width:359px; height:323px; overflow:hidden;}
+/* contents-work */
+ul#wo {  }
+ul#wo li#workBg { position:absolute; width:178px; height:193px;  overflow:hidden; margin:11px 0 0 543px;  }
+ul#wo li#choBg { position:absolute; width:140px; height:99px; overflow:hidden; margin:95px 0 0 700px;  }
+ul#wo li#ufoBg { position:absolute; width:130px; height:125px; overflow:hidden; margin:102px 0 0 793px;   }
+
+/* contents-story */
+ul#st {  }
+ul#st li#genieBg { position:absolute; width:280px; height:276px; overflow:hidden; left:68px; bottom:51px;}
+ul#st li#mouseBg { position:absolute; width:110px; height:181;  left:0px; bottom:110px; overflow:hidden; }
+/* contents-contact */
+ul#co {}
+ul#co li#mailBg { position:absolute; width:240px; height:232px; overflow:hidden; bottom:0px; right:197px; }
+ul#co li#mrBg { position:absolute; width:410px; height:211px; overflow:hidden; bottom:0px; right:-25px; }

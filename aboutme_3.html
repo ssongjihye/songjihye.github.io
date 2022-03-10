@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>pagescroll</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/webfont.css">
+<style>
+	* { margin:0; padding:0; }
+	ul,ol,li { list-style:none}
+	img { border:none; }
+
+#box1 { width:922px; height:265px; overflow:hidden;  }
+#box1 #img { width:922px; height:5300px; background:url(img/interview_paper.png) no-repeat 0 0; }
+
+
+
+</style>
+<script src="js/jquery-1.7.2.min.js" /></script>
+<script>
+	$(function(){
+			
+
+		$('#box1').click(function() {
+		var total = 20;
+		var counter = 0;
+
+			counter++;
+			if (counter < total) {
+   		  		$('#img').css({backgroundPosition:"-=34px 0"});
+		};
+		
+	});
+</script>
+</head>
+<body>
+
+
+	<div id="box1">
+	    <div id="img"></p>
+	</div>
+
+</body>
+</html>

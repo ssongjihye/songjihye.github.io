@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#oblici").animate({
+                'background-position-x': 0,
+                'background-position-y': 590
+            },90,'linear');//  6초에 걸쳐서 내려온다..
+        })
+    </script>
+    <style type="text/css">
+        #oblici
+        {
+            height: 600px;
+            width: 300px;
+            background-color: black;
+            background-image: url(img/interview_paper.png);
+            background-position-x: 0px;
+            background-position-y: 0px;
+            background-repeat: no-repeat;
+            color:white;
+        }
+    </style>
+    <title>infiniteAnimate</title>
+</head>
+<body>
+<div id="oblici">
+    <ul>
+        <li>가가가가</li>
+        <li>나나나나</li>
+        <li>다다다다</li>
+        <li>라라라라</li>
+    </ul>
+</div>
+</body>
+</html>

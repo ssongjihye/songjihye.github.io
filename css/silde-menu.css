@@ -1,0 +1,31 @@
+/* navBox_icon */
+#header #ux p#navIcon { position:fixed; right:30px; top:25px; }
+#header #ux p#navIcon a { background:url(../img/navIcon.png) no-repeat 0 0; width:34px; height:24px; display:block; }
+
+/* navBox */
+#navBox_sl { position:absolute; width:0px; height:100%; right:0px; overflow:hidden; display:none; }
+#boxAni { position:absolute; width:12190px; height:100%; background-image:url("../img/navbox_sl_line.png"); }
+#blackBox { width:100%; height:100%; position:fixed; background:black; display:none;}
+
+#navBox ul { position:absolute; top:25%; right:0%; width:260px; height:345px; margin:0 30px 0 0; display:none; }
+#navBox ul li {  width:149px; height:29px; margin:0 0 48px 0; }
+#navBox ul li a { display:block; text-indent:-9999px; }
+#navBox ul li img.menuIcon { margin:-30px 0 0 210px; }
+#navBox ul li#home { background:url(../img/nav-typo.png) no-repeat left 0; }
+#navBox ul li.selected { background:url(../img/nav-typo_h.png) no-repeat left 0 !important;} 
+#navBox ul li#aboutme { background:url(../img/nav-typo.png) no-repeat left -32px;}
+#navBox ul li#portfolio { background:url(../img/nav-typo.png) no-repeat left -62px;}
+#navBox ul li#story { background:url(../img/nav-typo.png) no-repeat left -92px;}
+#navBox ul li#contact { background:url(../img/nav-typo.png) no-repeat left -122px;}
+
+/* navBox_hover */
+#navBox ul #home:hover { background:url(../img/nav-typo_h.png) no-repeat 0 0;}
+#navBox ul #aboutme:hover { background:url(../img/nav-typo_h.png) no-repeat 0 -32px;}
+#navBox ul #portfolio:hover { background:url(../img/nav-typo_h.png) no-repeat 0 -62px;}
+#navBox ul #story:hover { background:url(../img/nav-typo_h.png) no-repeat 0 -92px;}
+#navBox ul #contact:hover { background:url(../img/nav-typo_h.png) no-repeat 0 -122px;}
+#navBox ul #home:active { background:url(../img/nav-typo.png) no-repeat -148px 0;}
+#navBox ul #aboutme:active { background:url(../img/nav-typo.png) no-repeat -148px -32px;}
+#navBox ul #portfolio:active { background:url(../img/nav-typo.png) no-repeat -148px -62px;}
+#navBox ul #story:active { background:url(../img/nav-typo.png) no-repeat -148px -92px;}
+#navBox ul #contact:active { background:url(../img/nav-typo.png) no-repeat -148px -122px;}

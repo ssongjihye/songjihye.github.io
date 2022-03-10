@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7d56bc81-cad7-4166-af22-7fa845bc1325" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/송지혜_2015.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aboutme.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aboutme_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aboutme_3.html.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/animate2 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/animate2.html.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/main-contents.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/portfolio-contents.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/silde-menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/webfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/ab1_back.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/about-me1_me.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/about-paper.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/about2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/about3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/award_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/award_icon_s.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/career.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/cho.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/company_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/contact_back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/contact_paper.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/footer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/genie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/interview_num.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/interview_paper.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/jhwork.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/mail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/main-illust2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/main_typo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/mainufo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/menu_typo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/mouse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/mr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/nav-typo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/nav-typo_h.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/nav.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/navIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/navbox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/navbox_sl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/navbox_sl_line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/overview1_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/overview_typo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/overview_work.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/paper.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/reading.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/robot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/robot_ani.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/scroll_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/skill.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/work.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/work.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/work_book.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/work_eye.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/work_helicopter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/work_imgbox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/work_imgbox_b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/work_me_ani.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/work_robot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/ani-aboutMe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/ani-main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/ani-portfolio.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/grid-item-portfolio.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jquery-1.11.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jquery-1.7.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jquery.mousewheel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jquery.scrollTo-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/masonry.pkgd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/silde-menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navbox_sl_line.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webfont/Dinpro/DINPro.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webfont/Dinpro/DINPro.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webfont/Dinpro/DINPro.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webfont/Dinpro/DINPro.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webfont/NanumBold/NanumGothicBold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webfont/NanumBold/NanumGothicBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webfont/NanumBold/NanumGothicBold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webfont/NanumGothic/NanumGothic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webfont/NanumGothic/NanumGothic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webfont/NanumGothic/NanumGothic.woff" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/portfolio.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/aboutme_3.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/animate2 2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="26" column="18" lean-forward="true" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/webfont.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/webfont.css" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-2451" />
+    <option name="y" value="426" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="송지혜_2015" type="b2602c69:ProjectViewProjectNode" />
+              <item name="송지혜_2015" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="송지혜_2015" type="b2602c69:ProjectViewProjectNode" />
+              <item name="송지혜_2015" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="송지혜_2015" type="b2602c69:ProjectViewProjectNode" />
+              <item name="송지혜_2015" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="송지혜_2015" type="b2602c69:ProjectViewProjectNode" />
+              <item name="송지혜_2015" type="462c0819:PsiDirectoryNode" />
+              <item name="webfont" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="송지혜_2015" type="b2602c69:ProjectViewProjectNode" />
+              <item name="송지혜_2015" type="462c0819:PsiDirectoryNode" />
+              <item name="webfont" type="462c0819:PsiDirectoryNode" />
+              <item name="NanumGothic" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LSK\Documents\카카오톡 받은 파일\송지혜_2015" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7d56bc81-cad7-4166-af22-7fa845bc1325" name="Default Changelist" comment="" />
+      <created>1646911268246</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646911268246</updated>
+      <workItem from="1646911269375" duration="930000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="930000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-2568" y="-83" width="2576" height="1416" extended-state="6" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18676123" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/portfolio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aboutme_3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/animate2 2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="18" lean-forward="true" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/webfont.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

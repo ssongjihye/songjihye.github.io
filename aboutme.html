@@ -1,0 +1,316 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>pagescroll</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/webfont.css">
+<style>
+	* { margin:0; padding:0; }
+	ul,ol,li { list-style:none}
+	img { border:none; }
+
+    /* 로고, nav*/
+	#header { position:fixed; width:100%; height:70px; z-index:10; }
+	#header #ux h1.logo { position:fixed; left:40px; top:25px; }
+	#header #ux #navIcon { position:fixed; right:30px; top:25px; }
+
+
+    /* 스크롤 아이콘 */
+	#nav{ position:fixed; z-index:11; width:14px; height:100px; border:1px solid red; right:30px; top:50%; margin-top:-50px; }
+	.gnb{ width:14px;}
+	.gnb li{ width:14px; height:14px; background:url(img/scroll_icon.png) no-repeat 0 0; cursor:pointer;
+		     text-indent:-9999px; overflow:hidden; margin-bottom:10px; }	
+	.gnb li.view { background-position:0 -17px; height:52px; }
+	#about div.abP { position:relative; height:1000px; overflow:hidden; }
+	#page1{ background:url(img/ab1_back.jpg) no-repeat center center;}
+	#page2{ background-color:white; }
+	#page3{ background-color:white; }
+
+
+/* page1 */
+
+#page1 div#whiteBack { position:absolute; width:700px; height:100%; background-color:#ffffff; }
+#page1 div#page1_wrap {  position:absolute; width:1280px; height:850px; left:0; top:0; border:1px solid green;}
+#page1 div#page1_wrap div#overview1 { position:absolute; width:350px; height:850px; right:0; background-color:white; }
+
+#ab1_back div#ab1_img { position:absolute; width:930px; height:850px; left:0; }
+#ab1_back div#ab1_img ul {  }
+#ab1_back div#ab1_img ul li#me { position:absolute; background:url(img/about-me1_me.png) no-repeat center center; width:262px; height:800px; top:0; right:2%; margin-top:-15px; overflow:hidden; }
+
+#ab1_back div#ab1_img ul li#see { position:absolute; background:url(img/test.png) no-repeat center center; width:411px; height:405px; bottom:51px; left:-20px;} 
+
+
+#ab1_back div#ab1_img ul#cameraAni { position:absolute; width:448px; height:525px; left:362px; bottom:123px; }
+#ab1_back div#ab1_img ul#cameraAni li#camera { position:absolute; width:448px; height:496px; bottom:0; cursor:pointer; overflow:hidden; }
+#ab1_back div#ab1_img ul#cameraAni li#cameraIcon { position:absolute; }
+
+
+#overview1_content { position:absolute; width:239px; height:335px; right:50px; bottom:10%; }
+#overview1_content #overview1_p { float:right; background:url(img/overview1_p.png) no-repeat center center; width:195px; height:163px; }
+#overview1_content #overview1_t { float:right; width:239px; height:130px; margin-top:41px;}
+#overview1_t li#overview1_t1 { float:right; background:url(img/overview_typo.png) no-repeat 0 0; width:121px; height:28px; }
+#overview1_t li#overview1_t2 { float:right; color:#a7a7a7; font-family:"NanumGothic"; text-align:right; margin-top:23px; line-height:19px; }
+
+
+/* page2 */
+#overview2 { position:absolute; left:0; width:350px; height:100%; background-color:white; }
+#overview2_content { position:absolute; width:340px; height:600px; left:50px; top:125px; }
+#overview2_content #overview2_p { float:left; background:url(img/about2.png) no-repeat center center; width:462px; height:420px; margin-left:-124px; }
+#overview2_content #overview2_t { float:left; width:239px; height:130px; margin-bottom:42px;  }
+#overview2_t li#overview2_t1 { float:left; background:url(img/overview_typo.png) no-repeat 0 -85px; width:137px; height:28px; }
+#overview2_t li#overview2_t2 { float:left; color:#a7a7a7; font:14px dotum,"돋움",sans-serif; text-align:left; margin-top:23px; line-height:19px; }
+
+#ab2_back { position:absolute; width:885px; height:780px; top:118px; right:43px; }
+#ab2_back #ab2_img { width:885px; }
+#pageAni02 { width:885px; height:780px; overflow:hidden;}
+#ab2_back #ab2_img #ca { position:absolute; width:765px; height:540px; top:25px; left:57px; display:none; }
+#ab2_back #ab2_img .caBox { width:765px;  }
+#ab2_back #ab2_img #ca #ca1 { height:175px; }
+#ab2_back #ab2_img #ca #ca2 { height:125px; margin:44px 0 44px 0; }
+#ab2_back #ab2_img #ca #ca3 { height:147px; }
+#ab2_back #ab2_img #ca div p.caTitle { float:left; background:url(img/career.png) no-repeat 0 0; width:91px; }
+#ab2_back #ab2_img #ca div p#caTitle1 { background-position:0 0; height:40px; }
+#ab2_back #ab2_img #ca div p#caTitle2 { background-position:0 -60px; height:22px; }
+#ab2_back #ab2_img #ca div p#caTitle3 { background-position:0 -104px; height:21px; }
+#ab2_back #ab2_img #ca div div.caContent { float:right; width:612px;   }
+#ca div#caContent1 { position:relative; height:130px; margin-top:45px;  }
+#caContent1 ul#company { margin-left:-66px;  }
+#caContent1 ul#company li { float:left; color:#444444; font:12px dotum,"돋움",sans-serif; text-align:center; margin-left:66px;  }
+#caContent1 ul#company li span.date { color:#444444; font:11px dotum,"돋움",sans-serif;  }
+#caContent1 #companyImg { position:absolute; background:url(img/company_icon.png) no-repeat center center; width:612px; height:43px; top:45px; }
+
+#ca div#caContent2 { position:relative; height:95px; margin-top:30px;  }
+#ca div#caContent2 div { float:left; height:95px; }
+#ca div#caContent2 div#award { width:382px; height:50px; float:left; margin-right:33px; }
+#ca div#caContent2 div#award p { float:left; background:url(img/award_icon.png) no-repeat 0 0; width:41px; height:36px;   }
+#ca div#caContent2 div#award ul { float:left; width:320px; margin-left:21px;    }
+#ca div#caContent2 div#award ul li { color:#444444; font:11px dotum,"돋움",sans-serif; text-align:left; line-height:19px; letter-spacing:-1px; background:url(img/award_icon_s.png) no-repeat left center; }
+#ca div#caContent2 div#award ul li span { letter-spacing:0; color:#70a3b2; margin-right:15px; margin-left:7px; }
+#ca div#caContent2 div#ccertificate {width:197px; float:left; height:50px; float:left; }
+#ca div#caContent2 div#ccertificate p  { float:left; background:url(img/award_icon.png) no-repeat 0 -40px; width:41px; height:36px; }
+#ca div#caContent2 div#ccertificate ul { float:left; width:135px; margin-left:21px; }
+#ca div#caContent2 div#ccertificate ul li { color:#444444; font:11px dotum,"돋움",sans-serif; text-align:left; line-height:19px; letter-spacing:-1px; background:url(img/award_icon_s.png) no-repeat left center; }
+#ca div#caContent2 div#ccertificate ul li span { letter-spacing:0; color:#70a3b2; margin-right:15px; margin-left:7px;  }
+
+#ca div#caContent3 #skill { float:right; width:486px; height:115px;   margin-top:30px; }
+#ca div#caContent3 #skill ul { float:left; width:90px; height:115px;  margin-right:42px; }
+#ca div#caContent3 #skill ul#photo { background:url(img/skill.png) no-repeat 0 0; height:90px;}
+#ca div#caContent3 #skill ul#illu { background:url(img/skill.png) no-repeat -133px 0; height:90px;}
+#ca div#caContent3 #skill ul#inde { background:url(img/skill.png) no-repeat -267px 0; height:90px;}
+#ca div#caContent3 #skill ul#publ { margin-right:0px; background:url(img/skill.png) no-repeat -400px 0; height:90px; }
+#ca div#caContent3 #skill ul li { color:#444444; font:11px dotum,"돋움",sans-serif; text-align:center; margin-top:105px; }
+
+
+/* page3 */
+#overview3 { position:absolute; right:0; width:350px; height:100%; background-color:white; }
+#overview3_content { position:absolute; width:233px; height:473px; right:50px; bottom:10%;  }
+#overview3_content #overview3_p { float:right; background:url(img/about3.png) no-repeat center center; width:233px; height:305px; }
+#overview3_content #overview3_t { float:right; width:239px; height:130px; margin-top:41px; }
+#overview3_t li#overview3_t1 { float:right; background:url(img/overview_typo.png) no-repeat 0 -43px; width:186px; height:28px; }
+#overview3_t li#overview3_t2 { float:right; color:#a7a7a7; font:14px dotum,"돋움",sans-serif; text-align:right; margin-top:23px; line-height:19px; }
+
+#ab3_back { position:absolute; width:922px; height:731px; top:50%; left:-5px; margin-top:-320px; }
+#ab3_back div.interview_sl { position:relative; background:url(img/interview_paper.png) no-repeat center 0; width:922px; height:265px; }
+#ab3_back div#interview1 {border:1px solid red;}
+#ab3_back div#interview2 { margin:-32px 0 0 0; }
+#ab3_back div#interview3 { margin:-32px 0 0 0; }
+#ab3_back div.interview_sl p.interview_num { position:absolute; width:70px; height:9px; top:45px; left:155px; }
+#ab3_back div.interview_sl p#interview_num1 { background:url(img/interview_num.png) no-repeat left 0; }
+#ab3_back div.interview_sl p#interview_num2 { background:url(img/interview_num.png) no-repeat left -17px; }
+#ab3_back div.interview_sl p#interview_num3 { background:url(img/interview_num.png) no-repeat left -34px; }
+#ab3_back div.interview_sl ul { position:absolute; left:155px; top:85px; width:670px; }
+#ab3_back div.interview_sl ul li { float:left; font:11px dotum,"돋움",sans-serif; text-align:left; line-height:19px; letter-spacing:-1px; }
+#ab3_back div.interview_sl ul li.interview_title { width:195px; height:65px; color:#444444; font-size:16px;}
+#ab3_back div.interview_sl ul li.interview_content { width:404px; height:139px; margin-left:71px; color:white; }
+
+#blackBox { width:100%; height:100%; position:fixed; background:black; display:none; }
+
+
+</style>
+<script src="js/jquery-1.7.2.min.js" /></script>
+<script src="js/jquery.mousewheel.js"/></script>
+<script src="js/ani-aboutMe.js"></script>
+<script>
+</script>
+</head>
+<body>
+
+<div id="header">
+ 	<div id="ux">
+ 		<h1 class="logo"><a href="index.html"><img src="img/logo.png" width="44" height="39" alt="송지혜로고" /></a></h1>
+ 		<div id="navIcon"><img src="img/nav.png" width="33" height="18" alt="" /></div>
+ 	</div>
+</div>
+
+<!-- 스크롤 아이콘 -->
+<div id="nav"> 
+	<ul class="gnb">
+    	<li>page1</li>
+        <li>page2</li>
+        <li>page3</li>
+    </ul>
+</div>
+
+<!-- about -->
+<div id="about">
+
+<!-- about 페이지1 -->
+	<div id="page1" class="abP">
+		<div id="whiteBack"></div>
+		<div id="page1_wrap">
+			  <!-- 1페이지 설명 -->
+			  <div id="overview1">
+		      	 <div id="overview1_content">
+		      	     <div id="overview1_p"></div>
+			      	 <ul id="overview1_t">
+			      	    <li id="overview1_t1"></li>
+			      	    <li id="overview1_t2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </li>
+			      	 </ul>
+			     </div>
+		      </div>
+		      <!-- 1페이지 이미지 -->
+		      <div id="ab1_back">
+		      	<div id="ab1_img">
+		      		<ul>
+		      	   	  <li id="see"></li>
+		      	   	  <li id="cho"></li>
+		      	   	  <li id="me"></li>
+		      	    </ul>
+		      	    <ul id="cameraAni">
+		      	   	   <li id="camera">
+		      	   	   	 <img src="img/robot_ani.png" alt="" />
+		      	   	   </li>
+		      	   	  <li id="cameraIcon"></li>
+		      	    </ul>
+		      	</div>
+		      </div>
+		</div>
+	</div>
+
+
+<!-- about 페이지2 -->
+    <div id="page2" class="abP">
+
+    	<div id="overview2">
+	      	 <div id="overview2_content">
+		      	 <ul id="overview2_t">
+		      	    <li id="overview2_t1"></li>
+		      	    <li id="overview2_t2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </li>
+		      	 </ul>
+		      	 <div id="overview2_p"></div>
+		     </div>
+	    </div>
+	    <div id="ab2_back">
+	      	<div id="ab2_img">
+	      	   <div id="pageAni02"><img src="img/paper.png" alt=""/></div>
+	      	   <div id="ca">
+		      	    <div id="ca1" class="caBox">
+		      	        <p id="caTitle1" class="caTitle"></p>
+		      	        <div id="caContent1" class="caContent">
+		      	           <ul id="company">
+			      	          	<li><strong>태광그룹<br>에스티임</strong><br><br><br><br><br><br><span class="date">2015.02 ~<br>2013.09</span></li>
+			      	          	<li><strong>태광그룹<br>한국도서보급</strong><br><br><br><br><br><br><span class="date">2013.09 ~<br>2011.08</span></li>
+			      	          	<li><strong>엘림지앤피</strong><br><br><br><br><br><br><br><span class="date">2011.08 ~<br>2011.01</span></li>
+			      	          	<li><strong>뷰앤아이</strong><br><br><br><br><br><br><br><span class="date">2010.10 ~<br>2009.09</span></li>
+			      	          	<li><strong>서울과학기술대학교</strong><br>시각디자인학과 졸업<br><br><br><br><br><br><span class="date">2008.08 ~<br>2004.03</span></li>
+		      	          </ul>
+		      	          <div id="companyImg"></div>
+		      	        </div>
+		      	    </div>
+		      	    <div id="ca2" class="caBox">
+		      	        <p id="caTitle2" class="caTitle"></p>
+		      	        <div id="caContent2" class="caContent">
+		      	        	<div id="award">
+		      	        		<P></P>
+		      	        		<ul>
+		      	        			<li><span>2015.06</span>  경상북도 전통문양 디자인 공모전 특선</li>
+		      	        			<li><span>2015.01</span>  iF DESIGN AWARD 2015, Discipline Communication</li>
+		      	        			<li><span>2010.07</span>  경상북도 전통문양 디자인 공모전 특선</li>
+		      	        			<li><span>2007.12</span>  SOKI 국제일러스트레이션 공모전 입선</li>
+		      	        			<li><span>2007.12</span>  대한민국 북아트 대전 입선</li>
+		      	        		</ul>
+		      	        	</div>
+		      	        	<div id="ccertificate">
+		      	        		<P></P>
+		      	        		<ul>
+		      	        			<li><span>2010.06</span>  시각디자인기사</li>
+		      	        			<li><span>2009.01</span>  컬러리스트기사</li>
+
+		      	        		</ul>
+		      	        	</div>
+		      	        </div>
+		      	    </div>
+		      	    <div id="ca3" class="caBox">
+		      	      	<p id="caTitle3" class="caTitle"></p>
+		      	        <div id="caContent3" class="caContent">
+			      	        <div id="skill">
+			      	          	<ul id="photo">
+			      	          		<li>PHOTOSHOP</li>
+			      	          	</ul>
+			      	          	<ul id="illu">
+			      	          		<li>ILLUSTRATOR</li>
+			      	          	</ul>
+			      	          	<ul id="inde">
+			      	          		<li>INDESIGN</li>
+			      	          	</ul>
+			      	          	<ul id="publ">
+			      	          		<li>PUBLISH</li>
+			      	          	</ul>
+			      	        </div>
+		      	        </div>
+		      	    </div>
+	      	   </div>
+	      	</div>
+	    </div>
+    </div>
+<!-- about 페이지3 -->
+    <div id="page3" class="abP">
+
+    	<div id="overview3">
+	      	 <div id="overview3_content">
+	      	     <div id="overview3_p"></div>
+		      	 <ul id="overview3_t">
+		      	    <li id="overview3_t1"></li>
+		      	    <li id="overview3_t2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </li>
+		      	 </ul>
+		     </div>
+	    </div>
+	    <div id="ab3_back">
+	    	<div id="interview1" class="interview_sl">
+	    		<p id="interview_num1" class="interview_num"></p>
+	    		<ul>
+	    			<li class="interview_title"><strong>디자인을 알아가다.</strong></li>
+	    			<li class="interview_content">
+	    			브랜드아이덴티티와 태광그룹의 흥국생명, 흥국화재, 티브로드, 선화예술문화재단 등 여러 계열사의 편집물들을 작업하면서 꿈과 현실 사이의 균형을 유지하는 디자인을 하게 되었습니다. 그 과정에 클라이언트들과 의사소통의 중요성을 깨달았습니다.몇 안되는 중요한 프로젝트 빼고는 단기간에 진행하는 업무들이 많았었는데 처음에는 하찮고 득이 될 거 같지 않았던 일들이 오히려 여러 가지 시도를 통해 역량을 키울 수 있었던 값진 기회들이였습니다. 그리고 해외 어워드를 진행하면서 그동안 준비해온 양분을 통해 캐릭터부분의 PM을 맡게 되면서 디자이너들과의 협력을 통해 좋은 결과를 얻을 수 있었습니다.
+	    			</li>
+	    		</ul>
+	    	</div>
+	    	<div id="interview2" class="interview_sl">
+	    		<p id="interview_num2" class="interview_num"></p>
+	    		<ul>
+	    			<li class="interview_title"><strong>디자이너와 디자인 마인드</strong></li>
+	    			<li class="interview_content">
+	    				브랜드아이덴티티와 태광그룹의 흥국생명, 흥국화재, 티브로드, 선화예술문화재단 등 여러 계열사의 편집물들을 작업하면서 꿈과 현실 사이의 균형을 유지하는 디자인을 하게 되었습니다. 그 과정에 클라이언트들과 의사소통의 중요성을 깨달았습니다.몇 안되는 중요한 프로젝트 빼고는 단기간에 진행하는 업무들이 많았었는데 처음에는 하찮고 득이 될 거 같지 않았던 일들이 오히려 여러 가지 시도를 통해 역량을 키울 수 있었던 값진 기회들이였습니다. 그리고 해외 어워드를 진행하면서 그동안 준비해온 양분을 통해 캐릭터부분의 PM을 맡게 되면서 디자이너들과의 협력을 통해 좋은 결과를 얻을 수 있었습니다.
+	    			</li>
+	    		</ul>
+	    	</div>
+	    	<div id="interview3" class="interview_sl">
+	    		<p id="interview_num3" class="interview_num"></p>
+	    		<ul>
+	    			<li class="interview_title"><strong>사람이 중심이다.</strong></li>
+	    			<li class="interview_content">
+	    				브랜드아이덴티티와 태광그룹의 흥국생명, 흥국화재, 티브로드, 선화예술문화재단 등 여러 계열사의 편집물들을 작업하면서 꿈과 현실 사이의 균형을 유지하는 디자인을 하게 되었습니다. 그 과정에 클라이언트들과 의사소통의 중요성을 깨달았습니다.몇 안되는 중요한 프로젝트 빼고는 단기간에 진행하는 업무들이 많았었는데 처음에는 하찮고 득이 될 거 같지 않았던 일들이 오히려 여러 가지 시도를 통해 역량을 키울 수 있었던 값진 기회들이였습니다. 그리고 해외 어워드를 진행하면서 그동안 준비해온 양분을 통해 캐릭터부분의 PM을 맡게 되면서 디자이너들과의 협력을 통해 좋은 결과를 얻을 수 있었습니다.
+	    			</li>
+	    		</ul>
+	    	</div>
+	    </div>
+
+    </div>
+
+<div id="blackBox">
+</div>
+
+
+</body>
+</html>

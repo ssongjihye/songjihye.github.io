@@ -1,0 +1,143 @@
+  <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8" />
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script type="text/javascript">
+		var ani=0;
+		function openBook(num)
+		{
+		
+			var total = 21;
+	    	var counter = 0;
+         	var a = -5300;
+            var c =  setInterval(function(){
+		       counter++;
+               a = a + 265;                    
+	               if (counter < total) {
+				       $('#oblici'+num).css({'background-position-y': a+'px', 'background-position-x': 0 });
+				   }else{
+				       console.log('clear');
+				       clearInterval(c)
+				   }
+				        console.log(a+'test');
+			},50)
+		}
+		function closeBook(num)
+		{
+		 		
+			 		var total = 20;
+			        var counter = 0;
+			        var a = 0;
+			        var c =  setInterval(function(){
+			                     counter++;
+			                      a = a - 265;
+			                       if (counter < total) {
+			                           $('#oblici'+num).css({'background-position-y': a+'px', 'background-position-x': 0 });
+			                       }else{
+			                           console.log('clear');
+			                           clearInterval(c)
+			                       }
+			                       console.log(a+'test');
+			                   },50)
+		}
+            $(function(){
+				var i=0;
+				
+                $("#oblici1").click(function(){
+					if(i!=1)
+					{
+						if(i!=0)
+						{
+						closeBook(i);
+						}
+						
+				 		openBook(1);
+						i=1;
+					}
+					else
+					{
+						closeBook(1);	
+						i=0;
+					}
+                })
+				$("#oblici2").click(function(){
+					if(i!=2)
+					{
+			 			if(i!=0)
+						{
+						closeBook(i);
+						}
+					
+			 		openBook(2);
+						i=2;
+					}
+					else
+					{
+					closeBook(2);	
+						i=0;
+					}
+                })
+				$("#oblici3").click(function(){
+					if(i!=3)
+					{
+						if(i!=0)
+						{
+						closeBook(i);
+						}
+					
+			 		openBook(3);
+						i=3;
+					}
+					else
+					{
+					closeBook(3);	
+						i=0;
+					}
+                })
+
+            });
+        </script>
+
+        <style type="text/css">
+            #oblici1 , #oblici2 ,#oblici3
+            {
+                height: 252px;
+                width: 922px;
+                background-color: white;
+                background-image: url(https://s3.ap-northeast-2.amazonaws.com/sbikee/animate.png);
+                background-position-x: 0px;
+                background-position-y: -5035px;
+                background-repeat: no-repeat;
+                color:black;
+            }
+        </style>
+        <title>infiniteAnimate</title>
+    </head>
+    <body>
+    <div id="oblici1">
+        <ul>
+            <li>가가가가</li>
+            <li>나나나나</li>
+            <li>다다다다</li>
+            <li>라라라라</li>
+        </ul>
+    </div>
+      <div id="oblici2">
+        <ul>
+            <li>가가가가</li>
+            <li>나나나나</li>
+            <li>다다다다</li>
+            <li>라라라라</li>
+        </ul>
+    </div>
+      <div id="oblici3">
+        <ul>
+            <li>가가가가</li>
+            <li>나나나나</li>
+            <li>다다다다</li>
+            <li>라라라라</li>
+        </ul>
+    </div>
+    </body>
+    </html>
